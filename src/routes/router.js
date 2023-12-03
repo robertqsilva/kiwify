@@ -6,4 +6,8 @@ const {cadastro} = require("../controllers/clientes");
 router.post("/login", login);
 router.post("/cadastro", cadastro);
 
+router.get('/on', (req, res) => {
+    return res.json('servidor on')
+})
+
 module.exports = router;
